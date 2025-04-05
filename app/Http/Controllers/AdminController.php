@@ -15,7 +15,7 @@ class AdminController extends Controller
             // professional dashboard
 
             if($role == "professional"){
-                return view('dashboard');
+                return inertia('professional/Dashboard');
             }
 
             // admin dashboard
