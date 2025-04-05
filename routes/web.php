@@ -16,3 +16,11 @@ Route::get('/admin', function (){
 Route::get("/explore-startups", function(){
     return view('explore-startups');
 })->name('explore-startups');
+
+Route::get("/jobs", function(){
+    return view('jobs');
+})->name('jobs');
+
+Route::get("/single-blog", function(){
+    return view('blog');
+})->name('blog');

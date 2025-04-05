@@ -30,9 +30,13 @@
         </h1>
         <div class="justify-between flex flex-1">
             <ul class="flex gap-x-8 items-center">
-                <li>Explore Startups</li>
+                <li>
+                    <a href="{{route('explore-startups')}}">Explore Startups</a>
+                </li>
                 <li>Tech Corner</li>
-                <li>Jobs</li>
+                <li>
+                    <a href="{{route('jobs')}}">Jobs</a>
+                </li>
                 <li>Career Hub</li>
                 <li>Events</li>
                 <li>Insights</li>
