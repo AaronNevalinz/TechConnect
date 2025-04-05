@@ -28,6 +28,7 @@
         <h1 class="font-bold">
             <a href="{{route('index')}}">TechConnect</a>
         </h1>
+
         <div class="justify-between flex flex-1">
             <ul class="flex gap-x-8 items-center">
                 <li>
