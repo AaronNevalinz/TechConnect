@@ -23,33 +23,7 @@
     </style>
 </head>
 <body>
-<header class=" py-4 px-10 shadow-sm">
-    <nav class="flex gap-x-16 items-center">
-        <h1 class="font-bold">
-            <a href="{{route('index')}}">TechConnect</a>
-        </h1>
 
-        <div class="justify-between flex flex-1">
-            <ul class="flex gap-x-8 items-center">
-                <li>
-                    <a href="{{route('explore-startups')}}">Explore Startups</a>
-                </li>
-                <li>Tech Corner</li>
-                <li>
-                    <a href="{{route('jobs')}}">Jobs</a>
-                </li>
-                <li>Career Hub</li>
-                <li>Events</li>
-                <li>Insights</li>
-                <li>Pricing</li>
-            </ul>
-            <div class="flex gap-x-10">
-                <button>Login</button>
-                <button class="bg-green-700 text-white px-2 py-1 rounded-lg">Sign up</button>
-            </div>
-        </div>
-    </nav>
-</header>
 
 <main class="px-10 mt-5">
 
