@@ -16,37 +16,71 @@
 
 </head>
 
-<body>
-    <header class="py-4 flex justify-center items-center shadow-sm">
-        <nav class="flex gap-x-16 w-2/3 items-center">
-            <h1 class="font-bold">
-                <a href="{{ route('index') }}">TechConnect</a>
-            </h1>
-            <div class="justify-between flex flex-1">
-                <ul class="flex gap-x-8 items-center">
-                    <li>
-                        <a href="{{ route('explore-startups') }}">Explore Startups</a>
-                    </li>
-                    <li>Tech Corner</li>
-                    <li>
-                        <a href="{{ route('jobs') }}">Jobs</a>
-                    </li>
-                    <li>Career Hub</li>
-                    <li>Events</li>
-                    <li>Insights</li>
-                    <li>Pricing</li>
-                </ul>
-                <div class="flex gap-x-10">
-                    <a href="{{ route('login') }}" class="inline-block py-3">Login</a>
-                    <a href="{{ route('register') }}" class="bg-green-700 text-white px-5 py-3 rounded-full inline-block">Sign up</a>
-                </div>
+<body class="bg-gray-50">
+  <header class="py-4 px-4 md:px-6 flex justify-between md:justify-center items-center shadow-sm relative">
+    <div class="flex items-center">
+        <h1 class="font-bold text-lg">
+            <a href="{{ route('index') }}">TechConnect</a>
+        </h1>
+    </div>
+    
+    <!-- Mobile menu button -->
+    <button class="md:hidden flex items-center" id="mobile-menu-button">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+    </button>
+    
+    <!-- Desktop Navigation -->
+    <nav class="hidden md:flex gap-x-4 lg:gap-x-16 w-full md:w-2/3 items-center">
+        <div class="justify-between flex flex-1">
+            <ul class="flex gap-x-3 lg:gap-x-8 items-center text-sm lg:text-base">
+                <li>
+                    <a href="{{ route('explore-startups') }}" class="hover:text-green-700 pl-6">Explore Startups</a>
+                </li>
+                <li class="hover:text-green-700">Tech Corner</li>
+                <li>
+                    <a href="{{ route('jobs') }}" class="hover:text-green-700">Jobs</a>
+                </li>
+                <li class="hover:text-green-700">Career Hub</li>
+                <li class="hidden lg:block hover:text-green-700">Events</li>
+                <li class="hidden lg:block hover:text-green-700">Insights</li>
+                <li class="hidden lg:block hover:text-green-700">Pricing</li>
+            </ul>
+            <div class="flex gap-x-3 lg:gap-x-10 items-center">
+                <a href="{{ route('login') }}" class="inline-block py-2 text-sm lg:text-base hover:text-green-700">Login</a>
+                <a href="{{ route('register') }}" class="bg-green-700 text-white px-3 lg:px-5 py-2 lg:py-3 rounded-full inline-block text-sm lg:text-base hover:bg-green-800">Sign up</a>
             </div>
-        </nav>
-    </header>
+        </div>
+    </nav>
+    
+    <!-- Mobile Navigation Menu -->
+    <div class="hidden absolute top-full left-0 right-0 bg-white shadow-md z-50 p-4" id="mobile-menu">
+        <ul class="flex flex-col gap-y-4">
+            <li>
+                <a href="{{ route('explore-startups') }}" class="block py-2 hover:text-green-700">Explore Startups</a>
+            </li>
+            <li class="block py-2 hover:text-green-700">Tech Corner</li>
+            <li>
+                <a href="{{ route('jobs') }}" class="block py-2 hover:text-green-700">Jobs</a>
+            </li>
+            <li class="block py-2 hover:text-green-700">Career Hub</li>
+            <li class="block py-2 hover:text-green-700">Events</li>
+            <li class="block py-2 hover:text-green-700">Insights</li>
+            <li class="block py-2 hover:text-green-700">Pricing</li>
+            <li class="flex gap-x-4 pt-4 border-t">
+                <a href="{{ route('login') }}" class="py-2 px-4 border border-gray-300 rounded-full hover:bg-gray-50">Login</a>
+                <a href="{{ route('register') }}" class="bg-green-700 text-white px-4 py-2 rounded-full hover:bg-green-800">Sign up</a>
+            </li>
+        </ul>
+    </div>
+</header>
+
+
     {{ $slot }}
 
     <footer
-      class="bg-black relative z-10 pt-20 lg:pt-[120px]"
+      class="bg-black relative z-10 px-6 pt-20 lg:pt-[120px]"
     >
       <div class="container mx-auto">
         <div class="-mx-4 flex flex-wrap">
@@ -340,6 +374,17 @@
         </span>
       </div>
     </footer>
+    <script>
+      // JavaScript to toggle mobile menu
+      document.addEventListener('DOMContentLoaded', function() {
+          const mobileMenuButton = document.getElementById('mobile-menu-button');
+          const mobileMenu = document.getElementById('mobile-menu');
+          
+          mobileMenuButton.addEventListener('click', function() {
+              mobileMenu.classList.toggle('hidden');
+          });
+      });
+  </script>
 </body>
 
 </html>
