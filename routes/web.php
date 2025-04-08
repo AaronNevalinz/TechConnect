@@ -20,7 +20,9 @@ Route::get("/explore-startups", function(){
 Route::get("/jobs", function(){
     return view('jobs');
 })->name('jobs');
-
+Route::get("/jobs/1", function(){
+    return view('single-job');
+})->name('jobs');
 Route::get("/single-blog", function(){
     return view('blog');
 })->name('blog');
