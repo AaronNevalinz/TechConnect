@@ -12,10 +12,9 @@ return new class extends Migration {
             $table->string('name');
             $table->text('description');
             $table->string('industry');
-            $table->unsignedBigInteger('founder_id');
+            $table->foreignId('founder_id')->constrained('users')->onDelete('cascade');
+            $table->string('logo')->nullable();
             $table->timestamps();
-
-            $table->foreign('founder_id')->references('id')->on('users')->onDelete('cascade');
         });
     }
 

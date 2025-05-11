@@ -65,4 +65,13 @@ class User extends Authenticatable
             'password' => 'hashed',
         ];
     }
+
+    public function startups()
+    {
+        return $this->hasMany(Startup::class, 'founder_id');
+    }
+    public function startup()
+    {
+        return $this->belongsToMany(Startup::class, 'startup_user');
+    }
 }

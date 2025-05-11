@@ -7,46 +7,28 @@ use Illuminate\Support\Facades\Auth;
 
 class AdminController extends Controller
 {
-    public function index(){
-        if(Auth::id()){
-            $role = Auth()->user()->role;
-            // Redirect to respective dashboard based on user role. For example:
+    public function index()
+    {
+        if (!Auth::check()) {
+            return redirect()->route('login');
+        }
 
-            // professional dashboard
+        $role = Auth::user()->role;
 
-            if($role == "professional"){
+        // Redirect to respective dashboard based on user role
+        switch ($role) {
+            case 'professional':
                 return inertia('professional/Dashboard');
-            }
-
-            // admin dashboard
-
-            else if($role == "admin"){
+            case 'admin':
                 return view('admin.dashboard');
-            }
-
-            // developer dashboard
-
-            else if($role == "developer"){
+            case 'developer':
                 return view('developer.dashboard');
-            }
-
-            // entreprenuer dashboard
-
-            else if($role == "entrepreneur"){
+            case 'entrepreneur':
                 return view('entrepreneur.dashboard');
-            }
-
-            // investor dashboard
-
-            else if($role == "investor"){
+            case 'investor':
                 return view('investor.dashboard');
-            }
-
-            // fall back to the home
-
-            else{
+            default:
                 return redirect()->back();
-            }
         }
     }
 }

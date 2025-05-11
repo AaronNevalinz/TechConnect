@@ -5,22 +5,25 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Job_Ops extends Model
+class Job extends Model
 {
     use HasFactory;
+
+    protected $table = 'job_postings';
 
     protected $fillable = [
         'title',
         'description',
-        'company_id',
+        'requirements',
         'location',
-        'job_type',
-        'salary',
-        'application_deadline',
+        'type',
+        'salary_range',
+        'startup_id',
+        'status',
     ];
 
     public function startup()
     {
-        return $this->belongsTo(Startup::class, 'company_id');
+        return $this->belongsTo(Startup::class);
     }
-}
+} 

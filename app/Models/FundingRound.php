@@ -9,7 +9,15 @@ class FundingRound extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['startup_id', 'round_type', 'amount'];
+    protected $fillable = [
+        'startup_id',
+        'amount_raised',
+        'target_amount',
+        'status',
+        'round_type',
+        'start_date',
+        'end_date'
+    ];
 
     public function startup() {
         return $this->belongsTo(Startup::class);

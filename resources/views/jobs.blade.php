@@ -194,72 +194,6 @@
                     </div>
                 </div>
             </div>
-            <div class="flex flex-col sm:flex-row gap-4 mb-8">
-                <div class="flex-shrink-0 flex justify-center sm:block">
-                    <div class="bg-green-500 w-16 h-16 sm:w-20 sm:h-20 rounded flex items-center justify-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 sm:h-12 sm:w-12 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                        </svg>
-                    </div>
-                </div>
-                <div class="flex-grow">
-                    <div class="flex flex-col sm:flex-row justify-between">
-                        <div>
-                            <h3 class="text-lg font-bold">Customer Service Agent (REMOTE)</h3>
-                            <span class="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded">Featured</span>
-                            <p class="text-blue-500 mt-1 text-sm sm:text-base">Deliveries On-Demand Logistics (Southeast Asia)</p>
-                            <p class="text-gray-600 mt-1 text-sm sm:text-base">Surakarta, Indonesia (Remote)</p>
-                            <p class="text-gray-600 mt-1 text-sm sm:text-base">IDR 4,000,000</p>
-                            <div class="flex flex-wrap gap-2 mt-2 text-xs">
-                                <span class="text-gray-600">Customer Service</span>
-                                <span class="text-gray-400 hidden sm:inline">•</span>
-                                <span class="text-gray-600">Logistics</span>
-                                <span class="text-gray-400 hidden sm:inline">•</span>
-                                <span class="text-gray-600">Full-time</span>
-                            </div>
-                        </div>
-                        <div class="text-gray-400 flex items-start mt-2 sm:mt-0">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 sm:h-4 sm:w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                            </svg>
-                            <span class="text-xs sm:text-sm">17 Feb 2025</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="flex flex-col sm:flex-row gap-4 mb-8">
-                <div class="flex-shrink-0 flex justify-center sm:block">
-                    <div class="bg-green-500 w-16 h-16 sm:w-20 sm:h-20 rounded flex items-center justify-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 sm:h-12 sm:w-12 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                        </svg>
-                    </div>
-                </div>
-                <div class="flex-grow">
-                    <div class="flex flex-col sm:flex-row justify-between">
-                        <div>
-                            <h3 class="text-lg font-bold">Customer Service Agent (REMOTE)</h3>
-                            <span class="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded">Featured</span>
-                            <p class="text-blue-500 mt-1 text-sm sm:text-base">Deliveries On-Demand Logistics (Southeast Asia)</p>
-                            <p class="text-gray-600 mt-1 text-sm sm:text-base">Surakarta, Indonesia (Remote)</p>
-                            <p class="text-gray-600 mt-1 text-sm sm:text-base">IDR 4,000,000</p>
-                            <div class="flex flex-wrap gap-2 mt-2 text-xs">
-                                <span class="text-gray-600">Customer Service</span>
-                                <span class="text-gray-400 hidden sm:inline">•</span>
-                                <span class="text-gray-600">Logistics</span>
-                                <span class="text-gray-400 hidden sm:inline">•</span>
-                                <span class="text-gray-600">Full-time</span>
-                            </div>
-                        </div>
-                        <div class="text-gray-400 flex items-start mt-2 sm:mt-0">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 sm:h-4 sm:w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                            </svg>
-                            <span class="text-xs sm:text-sm">17 Feb 2025</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
             
         </div>
 
@@ -388,66 +322,6 @@
                 </div>
             </div>
 
-            <div class="flex flex-col sm:flex-row gap-4">
-                <div class="flex-shrink-0 flex justify-center sm:block">
-                    <div class="w-16 h-16 sm:w-20 sm:h-20 rounded flex items-center justify-center overflow-hidden">
-                        <img src="https://placehold.co/80x80/pink/white?text=Ichigo" alt="PT. Ichigo Indonesia Intl" class="w-full h-full object-cover">
-                    </div>
-                </div>
-                <div class="flex-grow">
-                    <div class="flex flex-col sm:flex-row justify-between">
-                        <div>
-                            <h3 class="text-lg font-bold">HR Specialist</h3>
-                            <p class="text-blue-500 mt-1 text-sm sm:text-base">PT. Ichigo Indonesia Intl</p>
-                            <p class="text-gray-600 mt-1 text-sm sm:text-base">Jakarta, Indonesia</p>
-                            <p class="text-gray-600 mt-1 text-sm sm:text-base">IDR 7,000,000 - 10,000,000</p>
-                            <div class="flex flex-wrap gap-2 mt-2 text-xs">
-                                <span class="text-gray-600">Human Resources</span>
-                                <span class="text-gray-400 hidden sm:inline">•</span>
-                                <span class="text-gray-600">Internet technology</span>
-                                <span class="text-gray-400 hidden sm:inline">•</span>
-                                <span class="text-gray-600">Full-time</span>
-                            </div>
-                        </div>
-                        <div class="text-gray-400 flex items-start mt-2 sm:mt-0">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 sm:h-4 sm:w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                            </svg>
-                            <span class="text-xs sm:text-sm">9h ago</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="flex flex-col sm:flex-row gap-4">
-                <div class="flex-shrink-0 flex justify-center sm:block">
-                    <div class="w-16 h-16 sm:w-20 sm:h-20 rounded flex items-center justify-center overflow-hidden">
-                        <img src="https://placehold.co/80x80/pink/white?text=Ichigo" alt="PT. Ichigo Indonesia Intl" class="w-full h-full object-cover">
-                    </div>
-                </div>
-                <div class="flex-grow">
-                    <div class="flex flex-col sm:flex-row justify-between">
-                        <div>
-                            <h3 class="text-lg font-bold">HR Specialist</h3>
-                            <p class="text-blue-500 mt-1 text-sm sm:text-base">PT. Ichigo Indonesia Intl</p>
-                            <p class="text-gray-600 mt-1 text-sm sm:text-base">Jakarta, Indonesia</p>
-                            <p class="text-gray-600 mt-1 text-sm sm:text-base">IDR 7,000,000 - 10,000,000</p>
-                            <div class="flex flex-wrap gap-2 mt-2 text-xs">
-                                <span class="text-gray-600">Human Resources</span>
-                                <span class="text-gray-400 hidden sm:inline">•</span>
-                                <span class="text-gray-600">Internet technology</span>
-                                <span class="text-gray-400 hidden sm:inline">•</span>
-                                <span class="text-gray-600">Full-time</span>
-                            </div>
-                        </div>
-                        <div class="text-gray-400 flex items-start mt-2 sm:mt-0">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 sm:h-4 sm:w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                            </svg>
-                            <span class="text-xs sm:text-sm">9h ago</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
             <div class="flex flex-col sm:flex-row gap-4">
                 <div class="flex-shrink-0 flex justify-center sm:block">
                     <div class="w-16 h-16 sm:w-20 sm:h-20 rounded flex items-center justify-center overflow-hidden">
