@@ -21,13 +21,6 @@ Route::get('/admin', function (){
 Route::get("/explore-startups", function(){
     return view('explore-startups');
 })->name('explore-startups');
-
-Route::get("/jobs", function(){
-    return view('jobs');
-})->name('jobs');
-Route::get("/jobs/1", function(){
-    return view('single-job');
-})->name('jobs');
 Route::get("/single-blog", function(){
     return view('blog');
 })->name('blog');
@@ -42,7 +35,8 @@ Route::middleware(['auth', 'entrepreneur'])->group(function () {
     Route::get('/jobs/{job}/edit', [JobController::class, 'edit'])->name('jobs.edit');
     Route::put('/jobs/{job}', [JobController::class, 'update'])->name('jobs.update');
     Route::delete('/jobs/{job}', [JobController::class, 'destroy'])->name('jobs.destroy');
-    
+    Route::get('/jobs/{job}', [JobController::class, 'show'])->name('jobs.show');
+
     // Startup Routes
     Route::get('/startups', [StartupController::class, 'index'])->name('startups.index');
     Route::get('/startups/create', [StartupController::class, 'create'])->name('startups.create');
