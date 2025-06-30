@@ -6,9 +6,10 @@ use App\Http\Controllers\StartupController;
 use App\Http\Controllers\FundingRoundController;
 use App\Http\Controllers\JobController;
 use App\Http\Controllers\MessageController;
-Route::get('/', function () {
-    return view('welcome');
-})->name('index');
+// Route::get('/welcome', function () {
+//     return view('welcome');
+// })->name('index');
+Route::get('/', [JobController::class, 'homePageWithJobs'])->name('welcome');
 
 Route::middleware(['auth'])->group(function () {
     Route::get('/home', [AdminController::class, 'index'])->name('home');
