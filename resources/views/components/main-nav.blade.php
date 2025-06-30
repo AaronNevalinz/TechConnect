@@ -23,24 +23,24 @@
             <a href="{{ route('index') }}">TechConnect</a>
         </h1>
     </div>
-    
+
     <!-- Mobile menu button -->
     <button class="md:hidden flex items-center" id="mobile-menu-button">
         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
         </svg>
     </button>
-    
+
     <!-- Desktop Navigation -->
     <nav class="hidden md:flex gap-x-4 lg:gap-x-16 w-full md:w-2/3 items-center">
         <div class="justify-between flex flex-1">
             <ul class="flex gap-x-3 lg:gap-x-8 items-center text-sm lg:text-base">
                 <li>
-                    <a href="{{ route('explore-startups') }}" class="hover:text-green-700 pl-6">Explore Startups</a>
+                    <a href="{{ route('startups.index') }}" class="hover:text-green-700 pl-6">Explore Startups</a>
                 </li>
                 <li class="hover:text-green-700">Tech Corner</li>
                 <li>
-                    <a href="{{ route('jobs') }}" class="hover:text-green-700">Jobs</a>
+                    <a href="{{ route('jobs.index') }}" class="hover:text-green-700">Jobs</a>
                 </li>
                 <li class="hover:text-green-700">Career Hub</li>
                 <li class="hidden lg:block hover:text-green-700">Events</li>
@@ -53,7 +53,7 @@
             </div>
         </div>
     </nav>
-    
+
     <!-- Mobile Navigation Menu -->
     <div class="hidden absolute top-full left-0 right-0 bg-white shadow-md z-50 p-4" id="mobile-menu">
         <ul class="flex flex-col gap-y-4">
@@ -62,7 +62,7 @@
             </li>
             <li class="block py-2 hover:text-green-700">Tech Corner</li>
             <li>
-                <a href="{{ route('jobs') }}" class="block py-2 hover:text-green-700">Jobs</a>
+                <a href="{{ route('jobs.index') }}" class="block py-2 hover:text-green-700">Jobs</a>
             </li>
             <li class="block py-2 hover:text-green-700">Career Hub</li>
             <li class="block py-2 hover:text-green-700">Events</li>
@@ -379,7 +379,7 @@
       document.addEventListener('DOMContentLoaded', function() {
           const mobileMenuButton = document.getElementById('mobile-menu-button');
           const mobileMenu = document.getElementById('mobile-menu');
-          
+
           mobileMenuButton.addEventListener('click', function() {
               mobileMenu.classList.toggle('hidden');
           });
