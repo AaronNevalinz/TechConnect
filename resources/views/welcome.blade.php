@@ -1,3 +1,4 @@
+
 <x-main-nav>
     <!-- Hero Section -->
 <div class="bg-green-950 flex justify-center items-center px-4 py-8 md:py-10">
@@ -247,6 +248,7 @@
     <h1 class="text-center pb-6 sm:pb-10 text-xl sm:text-2xl font-bold">Latest Jobs</h1>
     <div class="w-full sm:w-11/12 md:w-5/6 lg:w-2/3 mx-auto px-4 grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 sm:gap-x-8 sm:gap-y-10">
         <!-- Job Card 1 -->
+        @forelse($jobs as $job)
         <div class="flex gap-x-2 items-center">
             <img class="w-12 h-12 sm:w-14 sm:h-14 object-cover rounded-full" src="images/jobs/icon-1.jpeg" alt="">
             <div>
@@ -255,7 +257,14 @@
                 <p class="text-sm">2.4M - 3.5M</p>
             </div>
         </div>
-
+        @empty
+            <div class="text-center py-12">
+                <p class="text-gray-500">You haven't posted any jobs yet.</p>
+                <a href="{{ route('jobs.create') }}" class="mt-4 inline-flex items-center px-4 py-2 bg-indigo-600 border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest hover:bg-indigo-700">
+                    Post Your First Job
+                </a>
+            </div>
+        @endforelse
         <!-- Job Card 2 -->
         <div class="flex gap-x-2 items-center">
             <img class="w-12 h-12 sm:w-14 sm:h-14 object-cover rounded-full" src="images/jobs/icon4.jpeg" alt="">

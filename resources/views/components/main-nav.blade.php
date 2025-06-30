@@ -20,7 +20,7 @@
   <header class="py-4 px-4 md:px-6 flex justify-between md:justify-center items-center shadow-sm relative">
     <div class="flex items-center">
         <h1 class="font-bold text-lg">
-            <a href="{{ route('index') }}">TechConnect</a>
+            <a href="{{ route('welcome') }}">TechConnect</a>
         </h1>
     </div>
 

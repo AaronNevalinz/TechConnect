@@ -14,11 +14,29 @@ class JobController extends Controller
      * Display a listing of the resource.
      */
     public function index()
-    {
+{
+    if (Auth::check()) {
         $startups = Auth::user()->startups;
         $jobs = Job::whereIn('startup_id', $startups->pluck('id'))->get();
-        return view('jobs.index', compact('jobs'));
+    } else {
+        $jobs = Job::all(); // or [] if you want guests to see no jobs
     }
+
+    return view('jobs.index', compact('jobs'));
+}
+
+public function homePageWithJobs()
+{
+    if (Auth::check()) {
+        $startups = Auth::user()->startups;
+        $jobs = Job::whereIn('startup_id', $startups->pluck('id'))->paginate(10);
+    } else {
+        $jobs = Job::paginate(10); // or [] if guests shouldn't see jobs
+    }
+
+    return view('welcome', compact('jobs'));
+}
+
 
     /**
      * Show the form for creating a new resource.
